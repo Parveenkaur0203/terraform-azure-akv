@@ -65,5 +65,10 @@ An active subscription in Microsoft Azure.
 
 ## Notes
 
-The Key Vault's SKU is predefined as Standard and cannot be altered in this module. Modify the main.tf file if Premium SKU is required.
-RBAC is enabled for this Key Vault by default (enable_rbac_authorization = true).
+- **Key Vault SKU**:
+  - The Key Vault's SKU is predefined as `Standard` and cannot be altered in this module.
+  - If you require `Premium` SKU, modify the `main.tf` file directly.
+
+- **RBAC Authorization**:
+  - Role-Based Access Control (RBAC) is enabled for this Key Vault by default.
+  - This is achieved via the configuration `enable_rbac_authorization = true`.
