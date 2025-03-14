@@ -12,7 +12,6 @@ This Terraform module provisions an **Azure Key Vault** with Role-Based Access C
 - [Providers](#providers)
 - [Requirements](#requirements)
 - [Notes](#notes)
-- [License](#license)
 
 ---
 
@@ -32,6 +31,7 @@ module "key_vault" {
 output "key_vault_id" {
   value = module.key_vault.key_vault_id
 }
+```
 
 ## Inputs
 
@@ -62,3 +62,8 @@ azurerm (Azure Resource Manager): Ensure you are using the latest version compat
 Terraform CLI version >= 1.0
 Azure CLI installed (if using local authentication)
 An active subscription in Microsoft Azure.
+
+## Notes
+
+The Key Vault's SKU is predefined as Standard and cannot be altered in this module. Modify the main.tf file if Premium SKU is required.
+RBAC is enabled for this Key Vault by default (enable_rbac_authorization = true).
