@@ -51,17 +51,23 @@ Once provisioned, this module outputs the Key Vault ID, which can be used in oth
 | :-- | :-- |
 | key_vault_id | The unique ID of the created Key Vault. |
 
+
 ## Providers
 
 This module requires the following Terraform provider:
 
-azurerm (Azure Resource Manager): Ensure you are using the latest version compatible with the module. Learn more about the provider `[here](https://registry.terraform.io/providers/hashicorp/azurerm/latest)`.
+- **[azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest)** (Azure Resource Manager): Ensure you are using the latest version compatible with the module.
+
 
 ## Requirements
 
-Terraform CLI version >= 1.0
-Azure CLI installed (if using local authentication)
-An active subscription in Microsoft Azure.
+- **Terraform CLI version** `>= 1.0`
+  
+- **Azure CLI installed**
+  - Required for local authentication (if using Service Principal credentials).
+  
+- **Active Azure Subscription**
+  - Ensure that you have an active subscription in **Microsoft Azure**.
 
 ## Notes
 
