@@ -55,7 +55,7 @@ Once provisioned, this module outputs the Key Vault ID, which can be used in oth
 
 This module requires the following Terraform provider:
 
-azurerm (Azure Resource Manager): Ensure you are using the latest version compatible with the module. Learn more about the provider here.
+azurerm (Azure Resource Manager): Ensure you are using the latest version compatible with the module. Learn more about the provider `[here](https://registry.terraform.io/providers/hashicorp/azurerm/latest)`.
 
 ## Requirements
 
